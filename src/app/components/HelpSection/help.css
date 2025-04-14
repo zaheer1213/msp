@@ -1,0 +1,17 @@
+.custome-help-text {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0.1px;
+  text-align: center;
+}
+
+.custome-help-para-text {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.2px;
+  text-align: center;
+}
