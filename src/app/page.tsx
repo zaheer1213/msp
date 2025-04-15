@@ -9,13 +9,15 @@ import ITManagement from './components/ITManagement/page'
 export default function Home () {
   return (
     <>
-      <Hero />
-      <Business />
-      <HelpSection />
-      <Management />
-      <Partnerships />
-      <OurApproach />
-      <ITManagement />
+      <div className='mt-20'>
+        <Hero />
+        <Business />
+        <HelpSection />
+        <Management />
+        <Partnerships />
+        <OurApproach />
+        <ITManagement />
+      </div>
     </>
   )
 }
