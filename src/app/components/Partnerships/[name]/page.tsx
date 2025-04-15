@@ -2,13 +2,13 @@
 
 import Image from 'next/image'
 import { useParams } from 'next/navigation'
-const Itasaservice = () => {
+const itasaservice = () => {
   const params = useParams()
   const name = params.name
   return (
     <>
       <div className=''>
-        {name == 'Itasaservice' && (
+        {name == 'itasaservice' && (
           <>
             <section
               className='relative w-full min-h-screen bg-cover bg-center flex items-center justify-center text-white text-center px-4 flex flex-col'
@@ -560,4 +560,4 @@ const Itasaservice = () => {
     </>
   )
 }
-export default Itasaservice
+export default itasaservice
