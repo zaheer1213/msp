@@ -72,7 +72,7 @@ const AboutUs = () => {
                         <p className='mb-2 text-xs font-[500]'>
                           Product Manager
                         </p>
-                        <p className='mb-5 text-xs text-gray-600'>
+                        <p className='mb-5 text-xs '>
                           Worem ipsum dolor sit amet, consectetur adipiscing
                           elit...
                         </p>
@@ -113,7 +113,7 @@ const AboutUs = () => {
                         <p className='mb-2 text-xs font-[500]'>
                           Design Team Lead
                         </p>
-                        <p className='mb-5 text-xs text-gray-600'>
+                        <p className='mb-5 text-xs '>
                           Worem ipsum dolor sit amet, consectetur adipiscing
                           elit...
                         </p>
@@ -154,7 +154,7 @@ const AboutUs = () => {
                         <p className='mb-2 text-xs font-[500]'>
                           Human Resources
                         </p>
-                        <p className='mb-5 text-xs text-gray-600'>
+                        <p className='mb-5 text-xs '>
                           Worem ipsum dolor sit amet, consectetur adipiscing
                           elit...
                         </p>
