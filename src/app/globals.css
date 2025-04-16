@@ -76,9 +76,11 @@ body {
   font-weight: 300;
   font-size: 18px;
   line-height: 150%;
-  color: #ECECEC;
+  color: #ececec;
 }
-
+.custome-width {
+  width: 1000px;
+}
 /* Responsive overrides for small devices */
 @media (max-width: 768px) {
   .heading-title {
@@ -92,12 +94,15 @@ body {
   .card-paragraph {
     font-size: 16px;
   }
-  .text-padding-space{
+  .text-padding-space {
     padding-bottom: 10px;
     padding-right: 10px;
   }
   .hero-content {
     padding-top: 3rem;
     padding-bottom: 3rem;
+  }
+  .custome-width {
+    width: 300px;
   }
 }

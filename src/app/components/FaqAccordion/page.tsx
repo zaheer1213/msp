@@ -70,11 +70,11 @@ export default function FaqAccordion () {
               ))}
             </div>
 
-            <div className='space-y-4 text-left'>
+            <div className='custome-width mx-auto space-y-4 text-left'>
               {faqData[activeTab].map((item, index) => (
                 <div
                   key={index}
-                  className='bg-[#3B1966]/30 rounded-xl px-6 py-4 cursor-pointer transition-all duration-300'
+                  className='w-full bg-[#3B1966]/30 rounded-xl px-6 py-4 cursor-pointer transition-all duration-300'
                   onClick={() => toggle(index)}
                 >
                   <div className='flex justify-between items-center'>
