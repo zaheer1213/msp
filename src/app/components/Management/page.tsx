@@ -29,13 +29,11 @@ const Management = () => {
             <div className='flex-1 md:m-10'>
               <h3 className='card-heading mb-2'>What truly sets us apart</h3>
               <p className='card-paragraph'>
-                What truly sets us apart is our commitment to mutual growth. Our
-                philosophy is to succeed by helping your business thrive. Unlike
-                other MSPs and MSSPs, we strive to be strategic partners rather
-                than regular managed service providers. We engage with you like
-                your in-house IT outfit, bringing forth a set of expertise that
-                would otherwise cost you a fortune with full-time salaried
-                staff.
+                Our commitment to mutual growth transforms us from service
+                providers into strategic partners. We function like your
+                in-house IT team, delivering specialized expertise that would
+                cost significantly more with full-time staff—helping your
+                business thrive while saving you money.
               </p>
             </div>
           </div>
@@ -53,10 +51,10 @@ const Management = () => {
             <div className='flex-1 md:m-10'>
               <h3 className='card-heading mb-2'>What we promise</h3>
               <p className='card-paragraph font-montserrat'>
-                With our full board package, we start by analyzing your business
-                requirements and formulating a strategic IT plan aimed at
-                driving your business growth. We will help you implement and
-                manage it. Nonetheless, all our offerings will ensure:
+                Our full board package starts with a thorough assessment of your
+                business needs to create a targeted IT strategy that drives
+                growth. We handle both planning and implementation, delivering
+                expert management that maximizes your technology investment.
               </p>
               <ol className='md:pt-4 space-y-4'>
                 <li className='font-[400]'>

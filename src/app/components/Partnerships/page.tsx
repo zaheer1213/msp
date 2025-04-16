@@ -49,8 +49,9 @@ const Partnerships = () => {
 
             <h4 className='mb-2 custome-help-text'>IT as a Service</h4>
             <p className='custome-help-para-text card-paragraph'>
-              Comprehensive IT support—from strategy to end-user care—boosting
-              productivity, revenue, and profitability.
+              Premium IT support from strategy to daily operations—driving
+              productivity, revenue growth, and enhanced profitability across
+              your business.
             </p>
             <button
               className='pt-5 border-b cursor-pointer'
@@ -75,8 +76,8 @@ const Partnerships = () => {
             </div>
             <h4 className='custome-help-text mb-2'>Managed Services</h4>
             <p className='custome-help-para-text'>
-              Comprehensive IT Infrastructure Management covering servers,
-              applications, storage, networks, cybersecurity.
+              Complete IT infrastructure management covering servers,
+              applications, storage, networks, and cybersecurity protection.
             </p>
             <button
               className='pt-5 border-b cursor-pointer'
@@ -101,8 +102,8 @@ const Partnerships = () => {
             </div>
             <h4 className='custome-help-text mb-2'>Specialized Services</h4>
             <p className='custome-help-para-text'>
-              Consulting | Assessments & Testing | Audits | Forensics | Custom
-              Decision Systems.
+              Expert solutions including consulting, assessments, testing,
+              audits, forensics, and custom decision systems.
             </p>
             <button
               className='pt-5 border-b cursor-pointer'

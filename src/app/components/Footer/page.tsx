@@ -7,21 +7,21 @@ export default function Footer () {
       <div className='max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-sm'>
         {/* Contact */}
         <div className='text-left'>
-          <h4 className='card-heading mb-2'>Contact</h4>
+          <h4 className='card-heading-contact mb-2'>Contact</h4>
           <p className='card-paragraph'>Work inquires: work@msp.com</p>
           <p className='card-paragraph'>PR and speaking: press@msp.com</p>
         </div>
 
         {/* Address */}
         <div className='text-left'>
-          <h4 className='card-heading mb-2'>Address</h4>
+          <h4 className='card-heading-contact mb-2'>Address</h4>
           <p className='card-paragraph'>398 Some Street, Floor 2</p>
           <p className='card-paragraph'>San Francisco, CA 90213</p>
         </div>
 
         {/* Social */}
         <div className='text-left'>
-          <h4 className='card-heading mb-2'>Social</h4>
+          <h4 className='card-heading-contact mb-2'>Social</h4>
           <p className='card-paragraph'>Twitter</p>
           <p className='card-paragraph'>Instagram</p>
           <p className='card-paragraph'>LinkedIn</p>
@@ -29,7 +29,7 @@ export default function Footer () {
 
         {/* Careers */}
         <div className='text-left'>
-          <h4 className='card-heading mb-2'>Careers</h4>
+          <h4 className='card-heading-contact mb-2'>Careers</h4>
           <p className='card-paragraph'>Careers@msp.com</p>
         </div>
       </div>

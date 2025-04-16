@@ -18,11 +18,11 @@ export default function OurApproach () {
             Our Approach –<br /> What Distinguishes Us
           </h2>
           <p className='mt-4 card-paragraph mx-auto leading-relaxed'>
-            Our commitment to mutual growth. Our philosophy is to succeed by
-            helping your business thrive. Unlike other MSPs and MSSPs, we strive
-            to be strategic partners rather than regular managed service
-            providers. We engage with you like your in-house IT outfit, bringing
-            forth a set of expertise that would otherwise cost you a fortune.
+            We partner with you as strategic allies, not just service providers.
+            Unlike typical MSPs, we function as your embedded IT team,
+            delivering premium expertise at a fraction of full-time staffing
+            costs—helping your business grow while maximizing your technology
+            investment.
           </p>
         </motion.div>
 
@@ -39,8 +39,8 @@ export default function OurApproach () {
             We focus on long-term partnerships not one-size-fits-all solutions.
             Our services are tailored to your unique business needs and goals,
             with flexible service levels{' '}
-            <strong>Essential, Standard, and Premium</strong> — to fit various
-            requirements and budgets.
+            <b className='font-bold'>Essential, Standard, and Premium</b> — to
+            fit various requirements and budgets.
           </p>
 
           <div className='grid grid-cols-1 md:grid-cols-3 gap-6 text-left'>
@@ -124,13 +124,11 @@ export default function OurApproach () {
         >
           <h3 className='card-heading mb-4'>A True IT Partnership</h3>
           <p className='card-paragraph leading-relaxed'>
-            When you choose us as your partner with our “IT as a Service” model,
-            we take on equal responsibility for maximizing your return on IT
-            investment (ROI). Our team continuously assesses your technology
-            needs, adjusting strategies and budgets to ensure your IT spending
-            supports your growth and bottom line. Let’s work together to build
-            an IT foundation that’s not just cost-effective but also a driver of
-            innovation and success.
+            Maximize your technology ROI with our IT as a Service model. We
+            share responsibility for your tech investment, continuously
+            optimizing strategies and budgets to support growth. Together, we'll
+            build an IT foundation that drives innovation and boosts your bottom
+            line.
           </p>
         </motion.div>
       </div>

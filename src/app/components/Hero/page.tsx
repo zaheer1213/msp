@@ -44,9 +44,9 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4 }}
         >
-          We go beyond traditional IT services—partnering with you to unlock
-          innovation, enhance operational efficiency, and drive scalable growth
-          tailored to your business goals.
+          We partner with you to boost innovation, streamline operations, and
+          fuel sustainable growth aligned with your business objectives—all
+          while delivering IT solutions that go far beyond the basics.
         </motion.p>
 
         <motion.button

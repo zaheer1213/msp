@@ -11,8 +11,8 @@ export default function Home () {
     <>
       <div className='mt-20'>
         <Hero />
-        <Business />
         <HelpSection />
+        <Business />
         <Management />
         <Partnerships />
         <OurApproach />

@@ -25,10 +25,9 @@ const Business = () => {
               Are you really harnessing <br /> the power of IT?
             </h3>
             <p className='card-paragraph md:ml-10 text-padding-space'>
-              Our Analytics Dashboard provides a clear and intuitive interface
-              for you to easily analyze your data. From customizable graphs to
-              real-time data updates, our dashboard offers everything you need
-              to gain valuable insights.
+              Our Analytics Dashboard offers clear insights through a simple
+              interface with customizable charts and live updates that turn data
+              into actionable business decisions.
             </p>
           </motion.div>
 

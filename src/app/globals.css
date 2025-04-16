@@ -71,12 +71,23 @@ body {
   letter-spacing: -0.16px;
   margin-bottom: 0.5rem;
 }
+.card-heading-contact {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 130%;
+  letter-spacing: -0.16px;
+  margin-bottom: 0.5rem;
+}
 
 .card-paragraph {
   font-weight: 300;
   font-size: 18px;
   line-height: 150%;
-  color: #ececec;
+}
+.card-paragraph-contact {
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 150%;
 }
 .custome-width {
   width: 1000px;
