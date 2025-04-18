@@ -78,7 +78,7 @@ export default function FaqAccordion () {
                   onClick={() => toggle(index)}
                 >
                   <div className='flex justify-between items-center'>
-                    <h4 className='font-semibold text-lg'>{item.question}</h4>
+                    <h4 className='font-semibold text-lg capitalize'>{item.question}</h4>
                     <span className='text-xl'>
                       {openIndex === index ? '−' : '+'}
                     </span>

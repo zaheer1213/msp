@@ -2,7 +2,6 @@
 import Link from 'next/link'
 import { FaFacebookF, FaDribbble, FaGithub } from 'react-icons/fa'
 import { FaXTwitter } from 'react-icons/fa6'
-import { GrNext, GrPrevious } from 'react-icons/gr'
 import { motion } from 'framer-motion'
 
 const AboutUs = () => {

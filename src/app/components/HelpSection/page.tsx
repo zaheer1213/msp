@@ -31,8 +31,8 @@ export default function HelpSection () {
               <Image
                 src='/images/Innovation.png'
                 alt='Innovation'
-                width={50}
-                height={50}
+                width={40}
+                height={40}
                 className='mx-auto'
               />
             </div>
@@ -56,8 +56,8 @@ export default function HelpSection () {
               <Image
                 src='/images/Designing_Idea.png'
                 alt='Design'
-                width={50}
-                height={50}
+                width={40}
+                height={40}
               />
             </div>
             <h4 className='custome-help-text mb-2'>Smarter Decision-Making</h4>
@@ -80,8 +80,8 @@ export default function HelpSection () {
               <Image
                 src='/images/Vector.png'
                 alt='Strategy'
-                width={50}
-                height={50}
+                width={40}
+                height={40}
               />
             </div>
             <h4 className='custome-help-text mb-2'>

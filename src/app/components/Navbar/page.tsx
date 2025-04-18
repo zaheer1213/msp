@@ -17,9 +17,23 @@ const Navbar = () => {
         {/* Navigation */}
         <ul className='flex items-center space-x-6 text-[#ECECEC] text-sm'>
           <li className='cursor-pointer'>
-            <Link href='/components/OurApproach'>
+            <Link href='/components/Business'>
               <span className='cursor-pointer hover:text-white transition'>
-                Pricing
+                Optimization
+              </span>
+            </Link>
+          </li>
+          <li className='cursor-pointer'>
+            <Link href='/components/Management'>
+              <span className='cursor-pointer hover:text-white transition'>
+                Empowerment
+              </span>
+            </Link>
+          </li>
+          <li className='cursor-pointer'>
+            <Link href='/components/ITManagement'>
+              <span className='cursor-pointer hover:text-white transition'>
+                Justification
               </span>
             </Link>
           </li>
@@ -30,10 +44,9 @@ const Navbar = () => {
           </li>
           <li className='cursor-pointer whitespace-nowrap'>
             <Link href='/components/AboutUs'>
-              <span className='hover:text-white transition'>About us</span>
+              <span className='hover:text-white transition'>About Us</span>
             </Link>
           </li>
-
           <li className='cursor-pointer w-full flex justify-center'>
             <Link href='/components/ContactUs'>
               <span className='inline-block bg-[#ECECEC] text-[#0B0121] px-4 py-2 rounded-full font-medium hover:opacity-90 transition'>

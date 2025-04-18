@@ -2,7 +2,7 @@
 
 import Image from 'next/image'
 import { useParams } from 'next/navigation'
-const itasaservice = () => {
+const Itasaservice = () => {
   const params = useParams()
   const name = params.name
   return (
@@ -560,4 +560,4 @@ const itasaservice = () => {
     </>
   )
 }
-export default itasaservice
+export default Itasaservice

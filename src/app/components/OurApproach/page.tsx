@@ -15,7 +15,7 @@ export default function OurApproach () {
           transition={{ duration: 0.8 }}
         >
           <h2 className='heading-title font-bold tracking-wide'>
-            Our Approach –<br /> What Distinguishes Us
+            Our Approach – What Distinguishes Us
           </h2>
           <p className='mt-4 card-paragraph mx-auto leading-relaxed'>
             We partner with you as strategic allies, not just service providers.
@@ -126,9 +126,9 @@ export default function OurApproach () {
           <p className='card-paragraph leading-relaxed'>
             Maximize your technology ROI with our IT as a Service model. We
             share responsibility for your tech investment, continuously
-            optimizing strategies and budgets to support growth. Together, we'll
-            build an IT foundation that drives innovation and boosts your bottom
-            line.
+            optimizing strategies and budgets to support growth. Together, we
+            will build an IT foundation that drives innovation and boosts your
+            bottom line.
           </p>
         </motion.div>
       </div>

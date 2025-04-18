@@ -3,7 +3,7 @@
 export default function ContactUs () {
   return (
     <section
-      className='relative w-full min-h-screen bg-cover bg-center text-white px-4 py-16 mt-20'
+      className='relative w-full py-10 bg-cover bg-center text-white px-4 mt-20'
       style={{ backgroundImage: `url("/images/Hero_Stack.jpg")` }}
     >
       {/* Overlay */}

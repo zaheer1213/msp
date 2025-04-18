@@ -36,7 +36,7 @@ export default function ITManagement () {
   ]
 
   return (
-    <section className='bg-[#160d2b] text-white px-6 py-16'>
+    <section className='bg-[#160d2b] text-white px-6 py-16 mt-20'>
       <div className='max-w-6xl mx-auto text-center space-y-12'>
         {/* Title Section */}
         <motion.div

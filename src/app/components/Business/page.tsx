@@ -6,7 +6,7 @@ import './business.css'
 
 const Business = () => {
   return (
-    <section className='bg-[#160d2b] bg-opacity-95 text-white px-6 py-16 md:px-24'>
+    <section className='bg-[#160d2b] bg-opacity-95 text-white px-6 py-16 md:px-24 mt-20'>
       <div className='max-w-6xl mx-auto space-y-12'>
         <h2 className='heading-title'>
           Is Your Business Getting <br /> the Most from IT?
@@ -22,7 +22,7 @@ const Business = () => {
             className='bg-[#10082C] p-6 rounded-2xl shadow-lg border border-[#292280] custome-shadow hover:scale-[1.02] transition-transform duration-300'
           >
             <h3 className='card-heading md:ml-10 padding-top'>
-              Are you really harnessing <br /> the power of IT?
+              Are You Really Harnessing <br /> The Power Of IT?
             </h3>
             <p className='card-paragraph md:ml-10 text-padding-space'>
               Our Analytics Dashboard offers clear insights through a simple
@@ -57,7 +57,7 @@ const Business = () => {
             className='md:col-span-2 flex flex-col md:flex-row items-center justify-between bg-[#10082C] p-6 rounded-2xl shadow-lg border border-[#292280] custome-shadow hover:scale-[1.01] transition-transform duration-300'
           >
             <div className='flex-1 md:ml-10'>
-              <h3 className='card-heading mb-2'>That’s where we come in!</h3>
+              <h3 className='card-heading mb-2'>That’s Where We Come In!</h3>
               <p className='card-paragraph'>
                 We bridge the gap, aligning your business requirements with IT
                 strategies that drive growth, efficiency, and resilience. IT
