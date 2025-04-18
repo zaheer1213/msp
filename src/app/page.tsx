@@ -6,7 +6,7 @@ import OurApproach from './components/OurApproach/page'
 export default function Home () {
   return (
     <>
-      <div className='mt-20'>
+      <div className='mt-20 overflow-x-hidden md:overflow-x-visible'>
         <Hero />
         <HelpSection />
         <OurApproach />
