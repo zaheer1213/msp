@@ -1,10 +1,8 @@
 'use client'
 import React from 'react'
 import { useRouter } from 'next/navigation'
-import { IoIosCode } from 'react-icons/io'
-import { AiOutlineOpenAI } from 'react-icons/ai'
-import { FaArrowTrendUp } from 'react-icons/fa6'
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 
 const Partnerships = () => {
   const router = useRouter()
@@ -15,102 +13,159 @@ const Partnerships = () => {
   const handleManagedServicesClick = () => {
     router.push('/components/Partnerships/managedservices')
   }
-
   const handlSpecializedServiceClick = () => {
     router.push('/components/Partnerships/specializedservice')
   }
 
+  const handeleContactClick = () => {
+    router.push('/components/ContactUs')
+  }
   return (
-    <section className='bg-[#160d2b] py-16 px-4 text-white text-center'>
-      <div className='max-w-5xl mx-auto'>
+    <section className='bg-[#160d2b] py-16 px-4 text-white'>
+      <div className='max-w-6xl mx-auto'>
+        <div className='text-center'>
+          <button className='uppercase px-6 py-3 border border-white/20 text-white font-semibold rounded-lg bg-white/5 hover:bg-white/10 transition mb-2'>
+            Services
+          </button>
+        </div>
         <motion.h2
-          className='heading-title text-center font-heading mb-12 heading-space'
+          className='heading-title text-center font-heading heading-space'
           initial={{ opacity: 0, y: -30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          What Partnerships Do We Offer?
+          What Services Do We Offer?
         </motion.h2>
+        <p className='card-paragraph text-center text-lg mb-16'>
+          Empower your business with AI-driven insights, real-time tracking, and
+          comprehensive historical data.
+        </p>
 
-        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 text-center'>
+        {/* Cards */}
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10'>
           {/* Card 1 */}
           <motion.div
-            className='p-6 rounded-2xl shadow-2xl hover:scale-105 transition-transform flex items-center justify-center flex-col bg-[#1e1038]'
-            initial={{ opacity: 0, x: -100 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            className='flex flex-col items-start bg-[#1e1038] rounded-2xl shadow-2xl p-6 hover:scale-105 transition-transform'
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
           >
-            <div className='w-[50px] h-[50px] flex items-center justify-center mb-4 bg-[#591ddd] rounded-xl'>
-              <div className='p-1 border-2 border-white rounded-md'>
-                <FaArrowTrendUp size={24} className='text-white' />
+            <div className='mb-6'>
+              <div className='flex items-center justify-center  rounded-xl'>
+                <Image
+                  src='/images/ITasaService.png'
+                  alt=''
+                  height={318}
+                  width={540}
+                />
               </div>
             </div>
-
-            <h4 className='mb-2 custome-help-text'>IT as a Service</h4>
-            <p className='custome-help-para-text card-paragraph'>
-              Premium IT support from strategy to daily operations—driving
-              productivity, revenue growth, and enhanced profitability across
-              your business.
-            </p>
-            <button
-              className='pt-5 border-b cursor-pointer'
-              onClick={handleClick}
-            >
-              Read More
-            </button>
+            <div className='flex flex-col h-full justify-between'>
+              <div>
+                <h4 className='text-xl font-semibold mb-3'>IT as a Service</h4>
+                <p className='text-sm mb-4'>
+                  Comprehensive IT support—from strategy to end-user
+                  care—boosting productivity, revenue, and profitability.{' '}
+                  <span
+                    className='font-semibold underline underline-offset-4 cursor-pointer'
+                    onClick={handleClick}
+                  >
+                    Read More
+                  </span>
+                </p>
+              </div>
+              <button
+                className='text-start text-sm text-white font-semibold underline underline-offset-4 mt-auto cursor-pointer'
+                onClick={handeleContactClick}
+              >
+                Contact Us
+              </button>
+            </div>
           </motion.div>
 
           {/* Card 2 */}
           <motion.div
-            className='p-6 rounded-2xl shadow-2xl hover:scale-105 transition-transform flex items-center justify-center flex-col bg-[#1e1038]'
-            initial={{ opacity: 0, y: 100 }}
+            className='flex flex-col items-start bg-[#1e1038] rounded-2xl shadow-2xl p-6 hover:scale-105 transition-transform'
+            initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7, delay: 0.2 }}
           >
-            <div className='w-[50px] h-[50px] flex items-center justify-center mb-4 bg-[#9426c9] rounded-xl'>
-              <div className='p-1 border-2 border-white rounded-md'>
-                <AiOutlineOpenAI size={24} className='text-white' />
+            <div className='mb-6'>
+              <div className='flex items-center justify-center  rounded-xl'>
+                <Image
+                  src='/images/ManagedServices.png'
+                  alt=''
+                  height={318}
+                  width={540}
+                />
               </div>
             </div>
-            <h4 className='custome-help-text mb-2'>Managed Services</h4>
-            <p className='custome-help-para-text'>
-              Complete IT infrastructure management covering servers,
-              applications, storage, networks, and cybersecurity protection.
-            </p>
-            <button
-              className='pt-5 border-b cursor-pointer'
-              onClick={handleManagedServicesClick}
-            >
-              Read More
-            </button>
+            <div className='flex flex-col h-full justify-between'>
+              <div>
+                <h4 className='text-xl font-semibold mb-3'>Managed Services</h4>
+                <p className='text-sm mb-4'>
+                  Comprehensive IT Infrastructure Management covering servers,
+                  applications, storage.{' '}
+                  <span
+                    className='font-semibold underline underline-offset-4 cursor-pointer'
+                    onClick={handleManagedServicesClick}
+                  >
+                    Read More
+                  </span>
+                </p>
+              </div>
+              <button
+                className='text-start text-sm text-white font-semibold underline underline-offset-4 mt-auto cursor-pointer'
+                onClick={handeleContactClick}
+              >
+                Contact Us
+              </button>
+            </div>
           </motion.div>
 
           {/* Card 3 */}
           <motion.div
-            className='p-6 rounded-2xl shadow-2xl hover:scale-105 transition-transform flex items-center justify-center flex-col bg-[#1e1038]'
-            initial={{ opacity: 0, x: 100 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            className='flex flex-col items-start bg-[#1e1038] rounded-2xl shadow-2xl p-6 hover:scale-105 transition-transform'
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7, delay: 0.4 }}
           >
-            <div className='w-[50px] h-[50px] flex items-center justify-center mb-4 bg-[#DE2BCE] rounded-xl'>
-              <div className='p-1 border-2 border-white rounded-md'>
-                <IoIosCode size={24} className='text-white' />
+            <div className='mb-6'>
+              <div className='flex items-center justify-center  rounded-xl'>
+                <Image
+                  src='/images/Specialized Services.png'
+                  alt=''
+                  height={318}
+                  width={540}
+                />
               </div>
             </div>
-            <h4 className='custome-help-text mb-2'>Specialized Services</h4>
-            <p className='custome-help-para-text'>
-              Expert solutions including consulting, assessments, testing,
-              audits, forensics, and custom decision systems.
-            </p>
-            <button
-              className='pt-5 border-b cursor-pointer'
-              onClick={handlSpecializedServiceClick}
-            >
-              Read More
-            </button>
+            <div className='flex flex-col h-full justify-between'>
+              <div>
+                <h4 className='text-xl font-semibold mb-3'>
+                  Specialized Services
+                </h4>
+                <p className='text-sm mb-4'>
+                  Consulting | Assessments & Testing | Audits | Forensics |
+                  Custom Decision Systems.{' '}
+                  <span
+                    className='font-semibold underline underline-offset-4 cursor-pointer'
+                    onClick={handlSpecializedServiceClick}
+                  >
+                    Read More
+                  </span>
+                </p>
+              </div>
+              <button
+                className='text-start text-sm text-white font-semibold underline underline-offset-4 mt-auto cursor-pointer'
+                onClick={handeleContactClick}
+              >
+                Contact Us
+              </button>
+            </div>
           </motion.div>
         </div>
       </div>

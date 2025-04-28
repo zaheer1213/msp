@@ -4,9 +4,14 @@ import { motion } from 'framer-motion'
 
 export default function OurApproach () {
   return (
-    <section className='bg-[#160d2b] text-white px-6 py-16 mt-10'>
+    <section className='bg-[#160f22] text-white px-6 py-16 mt-10'>
       <div className='max-w-6xl mx-auto space-y-12'>
         {/* Heading */}
+        <div className='text-center'>
+          <button className='uppercase px-6 py-3 border border-white/20 text-white font-semibold rounded-lg bg-white/5 hover:bg-white/10 transition mb-2'>
+            PRICING
+          </button>
+        </div>
         <motion.div
           className='text-center'
           initial={{ opacity: 0, y: -40 }}
@@ -15,122 +20,138 @@ export default function OurApproach () {
           transition={{ duration: 0.8 }}
         >
           <h2 className='heading-title font-bold tracking-wide'>
-            Our Approach – What Distinguishes Us
+            Flexible Plans for Every Business Need
           </h2>
           <p className='mt-4 card-paragraph mx-auto leading-relaxed'>
-            We partner with you as strategic allies, not just service providers.
-            Unlike typical MSPs, we function as your embedded IT team,
-            delivering premium expertise at a fraction of full-time staffing
-            costs—helping your business grow while maximizing your technology
-            investment.
-          </p>
-        </motion.div>
-
-        {/* Price and Planning Card */}
-        <motion.div
-          className='bg-[#1D1239] p-6 md:p-10 rounded-2xl shadow-xl border border-purple-900/30 backdrop-blur-md custome-shadow'
-          initial={{ opacity: 0, x: -80 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8, delay: 0.1 }}
-        >
-          <h3 className='card-heading mb-2'>Price and Planning</h3>
-          <p className='card-paragraph mb-8'>
-            We focus on long-term partnerships not one-size-fits-all solutions.
             Our services are tailored to your unique business needs and goals,
-            with flexible service levels{' '}
-            <b className='font-bold'>Essential, Standard, and Premium</b> — to
-            fit various requirements and budgets.
+            with flexible service <br /> levels—
+            <b className='font-bold'>Essential</b>,{' '}
+            <b className='font-bold'>Standard</b>, and{' '}
+            <b className='font-bold'>Premium</b>—to fit various requirements and
+            budgets
           </p>
+        </motion.div>
 
-          <div className='grid grid-cols-1 md:grid-cols-3 gap-6 text-left'>
-            {/* Essential */}
-            <motion.div
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-            >
-              <h4 className='text-lg font-semibold mb-2 border-b border-purple-600 inline-block pb-1'>
+        <section className='bg-[#160f22] py-16 px-6'>
+          <div className='max-w-6xl mx-auto grid md:grid-cols-3 gap-8'>
+            <div className='bg-[#181427] text-white rounded-xl p-8 flex flex-col transform transition-transform duration-300 hover:-translate-y-2'>
+              <h3 className='text-sm font-semibold tracking-widest mb-2 uppercase'>
                 Essential
-              </h4>
-              <ul className='list-disc list-outside text-sm card-paragraph space-y-2 mt-2 pl-5'>
-                <li>
-                  Designed to cover the core IT requirements, this option is for
-                  businesses needing a cost-effective solution that meets
-                  essential needs.
+              </h3>
+              <p className='text-gray-400 mb-6'>
+                Perfect for businesses just beginning to optimize Business
+                management.
+              </p>
+              <div className='text-4xl font-bold mb-2'>
+                $24<span className='text-base font-normal'>/month</span>
+              </div>
+              <button className='mt-4 mb-6 bg-[#4b4173] hover:bg-[#5e52a0] text-white py-2 rounded-md font-medium cursor-pointer'>
+                Get Started
+              </button>
+              <ul className='space-y-3 mt-auto'>
+                <li className='flex items-center'>
+                  <span className='text-white-400 mr-2'>✓</span> Covers all core
+                  IT requirements.
                 </li>
-                <li>
-                  We focus on maximizing value and efficiency while maintaining
-                  foundational support.
+                <li className='flex items-center'>
+                  <span className='text-white-400 mr-2'>✓</span> Cost-effective
+                  and reliable solution.
+                </li>
+                <li className='flex items-center'>
+                  <span className='text-white-400 mr-2'>✓</span> Maximizing
+                  value and efficiency.
+                </li>
+                <li className='flex items-center'>
+                  <span className='text-white-400 mr-2'>✓</span> Complete
+                  support for long-term stability.
+                </li>
+                <li className='flex items-center'>
+                  <span className='text-white-400 mr-2'>✓</span> Ideal for
+                  Growing Businesses.
                 </li>
               </ul>
-            </motion.div>
+            </div>
 
-            {/* Standard */}
-            <motion.div
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-            >
-              <h4 className='text-lg font-semibold mb-2 border-b border-purple-600 inline-block pb-1'>
+            <div className='relative bg-gradient-to-b from-[#612fb166] to-[#0E051B] text-white rounded-xl p-8 flex flex-col shadow-2xl overflow-hidden transform transition-transform duration-300 hover:-translate-y-2'>
+              {/* Extra top and bottom shadows */}
+              <div className='absolute top-0 left-0 right-0 h-6 bg-black opacity-20 rounded-t-xl blur-md'></div>
+              <div className='absolute bottom-0 left-0 right-0 h-6 bg-black opacity-20 rounded-b-xl blur-md'></div>
+
+              {/* Main Content */}
+              <h3 className='text-sm font-semibold tracking-widest mb-2 uppercase'>
                 Standard
-              </h4>
-              <ul className='list-disc list-outside text-sm card-paragraph space-y-2 mt-2 pl-5'>
-                <li>
-                  This level provides a well-rounded approach, balancing quality
-                  and cost.
+              </h3>
+              <p className='text-gray-200 mb-6'>
+                Ideal for teams needing more control and insights.
+              </p>
+              <div className='text-4xl font-bold mb-2'>
+                $99<span className='text-base font-normal'>/month</span>
+              </div>
+              <button className='mt-4 mb-6 bg-[#B039FF] text-white py-2 rounded-md font-semibold cursor-pointer'>
+                Get Started
+              </button>
+              <ul className='space-y-3 mt-auto'>
+                <li className='flex items-center'>
+                  <span className='text-white-200 mr-2'>✓</span> Offers a
+                  well-rounded Approach.
                 </li>
-                <li>
-                  It’s ideal for businesses looking for robust support that
-                  enhances productivity without overextending their budget.
+                <li className='flex items-center'>
+                  <span className='text-white-200 mr-2'>✓</span> Balancing
+                  quality and cost effectively.
+                </li>
+                <li className='flex items-center'>
+                  <span className='text-white-200 mr-2'>✓</span> Robust support
+                  for Operations.
+                </li>
+                <li className='flex items-center'>
+                  <span className='text-white-200 mr-2'>✓</span> Enhances
+                  overall productivity.
+                </li>
+                <li className='flex items-center'>
+                  <span className='text-white-200 mr-2'>✓</span> Ideal for
+                  businesses seeking value.
                 </li>
               </ul>
-            </motion.div>
+            </div>
 
-            {/* Premium */}
-            <motion.div
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.4 }}
-            >
-              <h4 className='text-lg font-semibold mb-2 border-b border-purple-600 inline-block pb-1'>
+            <div className='bg-[#181427] text-white rounded-xl p-8 flex flex-col transform transition-transform duration-300 hover:-translate-y-2'>
+              <h3 className='text-sm font-semibold tracking-widest mb-2 uppercase'>
                 Premium
-              </h4>
-              <ul className='list-disc list-outside text-sm card-paragraph space-y-2 mt-2 pl-5'>
-                <li>
-                  For businesses looking to prioritize IT as a competitive
-                  advantage, our premium solutions are comprehensive and highly
-                  adaptable.
+              </h3>
+              <p className='text-gray-400 mb-6'>
+                Best for large organizations with complex needs.
+              </p>
+              <div className='text-4xl font-bold mb-2'>
+                $599<span className='text-base font-normal'>/month</span>
+              </div>
+              <button className='mt-4 mb-6 bg-[#4b4173] hover:bg-[#5e52a0] text-white py-2 rounded-md font-medium cursor-pointer'>
+                Get Started
+              </button>
+              <ul className='space-y-3 mt-auto'>
+                <li className='flex items-center'>
+                  <span className='text-white-400 mr-2'>✓</span> Stay ahead of
+                  the competition.
                 </li>
-                <li>
-                  This level covers every aspect of IT with an emphasis on
-                  quality, security, and scalability.
+                <li className='flex items-center'>
+                  <span className='text-white-400 mr-2'>✓</span> Comprehensive
+                  Premium Solutions.
+                </li>
+                <li className='flex items-center'>
+                  <span className='text-white-400 mr-2'>✓</span> Highly
+                  Adaptable Framework.
+                </li>
+                <li className='flex items-center'>
+                  <span className='text-white-400 mr-2'>✓</span> Emphasis on
+                  Quality.
+                </li>
+                <li className='flex items-center'>
+                  <span className='text-white-400 mr-2'>✓</span> Focus on
+                  Security & Scalability.
                 </li>
               </ul>
-            </motion.div>
+            </div>
           </div>
-        </motion.div>
-
-        {/* True IT Partnership */}
-        <motion.div
-          className='bg-[#1D1239] p-6 md:p-10 rounded-2xl shadow-xl border border-purple-900/30 backdrop-blur-md custome-shadow'
-          initial={{ opacity: 0, x: 80 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-        >
-          <h3 className='card-heading mb-4'>A True IT Partnership</h3>
-          <p className='card-paragraph leading-relaxed'>
-            Maximize your technology ROI with our IT as a Service model. We
-            share responsibility for your tech investment, continuously
-            optimizing strategies and budgets to support growth. Together, we
-            will build an IT foundation that drives innovation and boosts your
-            bottom line.
-          </p>
-        </motion.div>
+        </section>
       </div>
     </section>
   )

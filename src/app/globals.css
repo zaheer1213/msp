@@ -1,8 +1,10 @@
 @import 'tailwindcss';
 
+/* Remove hard-coded Montserrat override */
 * {
-  font-family: 'Montserrat' !important;
+  font-family: var(--font-inter), sans-serif;
 }
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -11,7 +13,7 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
+  --font-sans: var(--font-inter);
   --font-mono: var(--font-geist-mono);
 }
 
@@ -25,7 +27,7 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-montserrat), sans-serif;
+  font-family: var(--font-inter), sans-serif;
   overflow-x: hidden;
 }
 
@@ -35,6 +37,7 @@ body {
     inset 0px 0.58px 0px 0px #ffffff80, inset 0px 0.5px 0px 0px #ffffff80;
   border-radius: 20px;
 }
+
 .text-padding-space {
   padding-bottom: 20px;
   padding-right: 20px;
@@ -43,6 +46,7 @@ body {
 .padding-top {
   padding-top: 20px;
 }
+
 .myContainer {
   padding-left: 4rem;
   padding-right: 4rem;
@@ -59,10 +63,10 @@ body {
   font-family: var(--font-heading);
   font-weight: 600;
   font-size: 45px;
-  line-height: 120%;
-  letter-spacing: -0.32px;
+  line-height: 72px;
+  letter-spacing: -2%;
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 0.5rem;
 }
 
 .card-heading {
@@ -72,6 +76,7 @@ body {
   letter-spacing: -0.16px;
   margin-bottom: 0.5rem;
 }
+
 .card-heading-contact {
   font-weight: 500;
   font-size: 22px;
@@ -85,18 +90,22 @@ body {
   font-size: 18px;
   line-height: 150%;
 }
+
 .card-paragraph-contact {
   font-weight: 200;
   font-size: 16px;
   line-height: 150%;
 }
+
 .custome-width {
   width: 1000px;
 }
+
 /* Responsive overrides for small devices */
 @media (max-width: 768px) {
   .heading-title {
     font-size: 28px;
+    line-height: 50px;
   }
 
   .card-heading {
@@ -106,14 +115,17 @@ body {
   .card-paragraph {
     font-size: 16px;
   }
+
   .text-padding-space {
     padding-bottom: 10px;
     padding-right: 10px;
   }
+
   .hero-content {
     padding-top: 3rem;
     padding-bottom: 3rem;
   }
+
   .custome-width {
     width: 300px;
   }

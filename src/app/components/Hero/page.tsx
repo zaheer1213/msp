@@ -2,20 +2,18 @@
 
 import React from 'react'
 import { motion } from 'framer-motion'
+import { useRouter } from 'next/navigation'
 
 const Hero = () => {
+  const router = useRouter()
   const handleScroll = () => {
-    window.scrollBy({
-      top: 700,
-      left: 0,
-      behavior: 'smooth'
-    })
+    router.push('/components/ContactUs')
   }
   return (
     <section
       className='relative w-full min-h-[80vh] md:min-h-screen bg-cover bg-center flex items-center justify-center text-white text-center px-4 '
       style={{
-        backgroundImage: `url("/images/Hero_Stack.jpg")`
+        backgroundImage: `url("/images/Ellipse 8.png")`
       }}
     >
       <div className='absolute inset-0  opacity-50 z-0' />
@@ -33,9 +31,7 @@ const Hero = () => {
           transition={{ delay: 0.2 }}
         >
           Beyond IT Management -<br />
-          Empowering Your Business,
-          <br />
-          Elevating Your Growth
+          Empowering Your Business, Elevating Your Growth
         </motion.h1>
 
         <motion.p
@@ -50,13 +46,16 @@ const Hero = () => {
         </motion.p>
 
         <motion.button
-          className='mt-6 text-[#ECECEC] px-6 py-2 rounded-full font-medium transition hover:opacity-90 bg-gradient-to-r from-[#292280] to-[#ECECEC] cursor-pointer'
+          className='inline-block  text-white px-6 py-2 rounded-lg font-medium hover:opacity-90 transition mt-3 cursor-pointer'
+          style={{
+            background: 'linear-gradient(to right, #B039FF, #9C39FF)'
+          }}
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6 }}
           onClick={handleScroll}
         >
-          Get Started
+          Contact Us
         </motion.button>
       </motion.div>
     </section>
